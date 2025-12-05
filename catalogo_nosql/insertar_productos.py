@@ -6,7 +6,7 @@ def insertar_productos():
     bd = obtener_bd()
     coleccion = bd.productos
 
-    # Limpia la colección para pruebas repetibles (opcional)
+    # Limpia la colección para pruebas repetibles
     resultado_borrado = coleccion.delete_many({})
     print("Documentos eliminados:", resultado_borrado.deleted_count)
 
